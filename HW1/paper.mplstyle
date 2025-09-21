@@ -1,0 +1,52 @@
+# MATPLOTLIB STYLE FILE
+# AUTHOR: David Feldstein Bofill, 2024
+# See https://matplotlib.org/stable/users/explain/customizing.html for more customs
+# Parameters to have in mind when writing a paper:
+# Full Text width: 6.4 inches
+# Figsize is determined in inches, so keep in mind parameters above
+
+# HOW TO USE: 
+# plt.style.use('path/to/this/file.mplstyle')
+
+### FIGURE
+figure.figsize: 6.4, 3
+
+### LINES
+lines.linewidth: 1
+lines.markersize: 2.5
+
+### LEGEND
+legend.fontsize: 8
+legend.frameon: False
+
+### FONTS
+font.size: 8
+
+### AXES
+axes.grid: False
+axes.linewidth: 0.5
+axes.labelsize: 10
+
+### TICKS
+xtick.major.size:    4     # major tick size in points
+xtick.minor.size:    2       # minor tick size in points
+ytick.major.size:    4     # major tick size in points
+ytick.minor.size:    2       # minor tick size in points
+
+xtick.direction: in
+ytick.direction: in
+
+# Uses costum color cycle. Colors can be selected by color="C#", 
+# where '#' is the number of the color in the cycle, e.g. 
+# color="C0" for the first color in the cycle.
+
+axes.prop_cycle: cycler('color', ['189BC4', 'FD8719', '762D34', '30A975', '021F52', 'D4002A', '70C6DD', 'FEBF7F', '9A5F65', '81CFAF', '5D7698', 'ED879D']) 
+
+### GRID
+grid.linewidth: 1
+grid.linestyle: :
+grid.color: k
+
+### OTHER
+savefig.dpi: 400
+image.cmap: RdYlBu_r
